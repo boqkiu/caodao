@@ -1,5 +1,5 @@
 # Base configs
-baseurl: "caodao.github.io"
+baseurl: "https://boqkiu.github.io/caodao/"
 #baseurl: "" # Comment the above line and uncomment this to test the website locally
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
