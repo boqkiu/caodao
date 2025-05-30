@@ -15,7 +15,7 @@ layout: default
         </nav>
     </header>
 
-    <!-- Main -->
+    <!-- Main
     <div id="main" data-exif='{{ site.exif }}'>
         {% for image in site.static_files %}
         {% if image.path contains 'fulls' %}
@@ -29,6 +29,18 @@ layout: default
         {% endif %}
         {% endfor %}
     </div>
+ -->
+
+<div id="main" data-exif='{{ site.exif }}'>
+  {% for filename in site.data.images %}
+    <article class="thumb">
+      <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ filename }}" class="image">
+        <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ filename }}" alt=""
+             data-name="{{ filename }}"/>
+      </a>
+    </article>
+  {% endfor %}
+</div>
 
     <!-- Footer -->
     <footer id="footer" class="panel">
