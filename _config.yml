@@ -3,7 +3,7 @@ baseurl: "https://boqkiu.github.io/caodao/"
 #baseurl: "" # Comment the above line and uncomment this to test the website locally
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
-google_analytics: "G-1CWCVQ9895"
+google_analytics: "G-2EHQSPK0KZ"
 
 # UI configs
 title: "caodao space"
