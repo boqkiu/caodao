@@ -32,11 +32,11 @@ layout: default
  -->
 
 <div id="main" data-exif='{{ site.exif }}'>
-  {% for filename in site.data.images %}
+  {% for image.name in site.data.images %}
     <article class="thumb">
-      <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ filename }}" class="image">
-        <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ filename }}" alt=""
-             data-name="{{ filename }}"/>
+      <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+        <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+             data-name="{{ image.name }}"/>
       </a>
     </article>
   {% endfor %}
